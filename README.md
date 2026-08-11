@@ -1,50 +1,99 @@
-# DevToolKit – Android Developer Toolbox for Termux
+# 🛠️ DevToolKit – Android Developer Toolbox for Termux
 
-DevToolKit is a collection of Python utilities designed to help Android developers and Termux users with everyday tasks. It's safe, beginner-friendly, and requires no root access.
+[![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/yourusername/DevToolKit/releases)
+[![Platform](https://img.shields.io/badge/platform-Termux-important.svg)](https://termux.com)
 
-## Features
+DevToolKit is a collection of Python utilities for Android developers and Termux users. It's safe, beginner-friendly, and requires no root.
 
-- **APK Information Viewer** – extract package name, version, size, and SHA256 hash from APK files.
-- **Hash Checker** – compute MD5, SHA1, SHA256 of any file and verify against known hashes.
-- **JSON Formatter** – validate and pretty-print JSON files.
-- **Storage Analyzer** – show disk usage and list largest folders; export reports.
-- **System Information** – display Android version, kernel, CPU, RAM, battery, and storage.
-- **Network Tester** – check internet, public IP, ping, and DNS lookup.
-- **GitHub Helper** – generate README, LICENSE, .gitignore, and project folder structure.
+---
 
-## Installation
+## 📸 Screenshots
 
-1. Install Termux from F-Droid or Google Play.
-2. Install dependencies:
+Add your screenshots in a `screenshots/` folder and update the links below:
+
+| Main Menu | APK Info | Storage Analyzer |
+|-----------|----------|------------------|
+| ![Menu](screenshots/menu.png) | ![APK](screenshots/apk.png) | ![Storage](screenshots/storage.png) |
+
+| GitHub Helper | System Info | Network Tester |
+|---------------|-------------|----------------|
+| ![GitHub](screenshots/github.png) | ![System](screenshots/system.png) | ![Network](screenshots/network.png) |
+
+---
+
+## 📁 Project Structure
+
+```
+
+DevToolKit/
+├── main.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── tools/
+│   ├── init.py
+│   ├── apk_info.py
+│   ├── hash_checker.py
+│   ├── json_formatter.py
+│   ├── storage_analyzer.py
+│   ├── system_info.py
+│   ├── network_test.py
+│   └── github_helper.py
+├── assets/
+│   └── banner.txt
+└── reports/          (generated)
+
+```
+
+---
+
+## ✨ Features
+
+- **APK Information Viewer** – package, version, size, SHA256 (requires `aapt`)
+- **Hash Checker** – MD5, SHA1, SHA256, verify against known hash
+- **JSON Formatter** – validate, pretty‑print, save
+- **Storage Analyzer** – disk usage, top 10 folders, export report
+- **System Information** – Android version, kernel, CPU, RAM, battery, storage
+- **Network Tester** – internet, public IP, ping, DNS lookup
+- **GitHub Helper** – generate README, LICENSE, .gitignore, project skeleton
+
+---
+
+## 📦 Installation
 
 ```bash
 pkg update && pkg upgrade
-pkg install python aapt   # aapt is optional but recommended
-git clone https://github.com/batplatbot/DevToolKit
+pkg install python git aapt
+git clone https://github.com/batplatbot/DevToolKit.git
 cd DevToolKit
 pip install -r requirements.txt
-chmod +x main.py
-```
-
-3. Clone or download this repository, then run:
-
-```bash
 python main.py
 ```
 
-Usage
+Optionally run termux-setup-storage to access /sdcard.
 
-Navigate the colourful menu by entering the number of the tool you wish to use. Most tools are interactive and guide you through input.
+---
 
-File Structure
+🗺️ Roadmap (v1.0.0)
 
-· main.py – main entry and menu.
-· tools/ – each tool is a separate module.
-· assets/ – contains the banner.
-· reports/ – generated reports (storage analysis).
+☑ All current features
+☐ APK Permission Viewer
+☐ Battery Diagnostics
+☐ Project Templates
+☐ Backup Utilities
 
-Requirements
+---
 
-· Python 3.6+
-· requests library (for GitHub Helper and Network Tester)
-· aapt (optional, for APK info)
+📄 License
+
+MIT – see LICENSE.
+
+---
+
+Built with ❤️ for the Termux community.
+
+```
+
+---
