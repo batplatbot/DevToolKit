@@ -20,6 +20,7 @@ DevToolKit is a collection of Python utilities designed to help Android develope
 ```bash
 pkg update && pkg upgrade
 pkg install python aapt   # aapt is optional but recommended
+git clone https://github.com/batplatbot/DevToolKit
 pip install -r requirements.txt
 ```
 
