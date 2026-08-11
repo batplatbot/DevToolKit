@@ -23,6 +23,7 @@ pkg install python aapt   # aapt is optional but recommended
 git clone https://github.com/batplatbot/DevToolKit
 cd DevToolKit
 pip install -r requirements.txt
+chmod +x main.py
 ```
 
 3. Clone or download this repository, then run:
