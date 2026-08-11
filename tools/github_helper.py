@@ -6,13 +6,13 @@ import os
 import datetime
 
 def create_readme(project_name, description):
-    return f"""# {project_name}
+    template = """# {project_name}
 
 {description}
 
 ## Installation
 
 ```bash
-git clone https://github.com/batplatbot/{project_name}
+git clone https://github.com/yourusername/{project_name}
 cd {project_name}
 # further instructions
