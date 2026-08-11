@@ -21,3 +21,27 @@ DevToolKit is a collection of Python utilities designed to help Android develope
 pkg update && pkg upgrade
 pkg install python aapt   # aapt is optional but recommended
 pip install -r requirements.txt
+```
+
+3. Clone or download this repository, then run:
+
+```bash
+python main.py
+```
+
+Usage
+
+Navigate the colourful menu by entering the number of the tool you wish to use. Most tools are interactive and guide you through input.
+
+File Structure
+
+· main.py – main entry and menu.
+· tools/ – each tool is a separate module.
+· assets/ – contains the banner.
+· reports/ – generated reports (storage analysis).
+
+Requirements
+
+· Python 3.6+
+· requests library (for GitHub Helper and Network Tester)
+· aapt (optional, for APK info)
