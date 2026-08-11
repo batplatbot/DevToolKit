@@ -17,9 +17,9 @@ Add your screenshots in a `screenshots/` folder and update the links below:
 |-----------|----------|------------------|
 | ![Menu](screenshots/menu.png) | ![APK](screenshots/apk.png) | ![Storage](screenshots/storage.png) |
 
-| GitHub Helper | System Info | Network Tester |
+| System Info | Network Tester |
 |---------------|-------------|----------------|
-| ![GitHub](screenshots/github.png) | ![System](screenshots/system.png) | ![Network](screenshots/network.png) |
+[System](screenshots/system.png) | ![Network](screenshots/network.png) |
 
 ---
 
